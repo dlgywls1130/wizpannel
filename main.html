@@ -268,7 +268,7 @@
                 <div class="header_sign">
 
                     <ul class="header_sign_wrap">
-                        <li>
+                        <li class="pc_sign">
                             <a href="">
                                 <div class="sign_icon">
                                     <img src="./img/icon_login.png" alt="login"> <!-- 로그인하기전 -->
@@ -280,7 +280,7 @@
                                 <!-- <p>로그아웃</p> -->
                             </a>
                         </li>
-                        <li>
+                        <li class="pc_sign">
                             <a href="">
                                 <div class="sign_icon">
                                     <img src="./img/icon_login.png">
@@ -290,6 +290,12 @@
                                 <!-- <p>wizpanel</p> -->
                             </a>
                         </li>
+                        <!-- mobile -->
+                        <li class="mobile_sign">
+                            <div class="sign_icon">
+                            <img src="./img/icon_signup.png">
+                        </div>
+                    </li>
                     </ul>
                 </div>
             </div>
@@ -309,7 +315,7 @@
     </section>
 
     <!-- 10초 설문조사 -->
-    <section class="common_section">
+    <section class="common_section pc-width">
         <div class="survey_wrap inner">
             <div class="survey_title">
                 <div class="title">
@@ -383,7 +389,7 @@
     </section>
 
     <!-- 미션이벤트 , 설문 더하기 -->
-    <section id="mission">
+    <section id="mission" class=" pc-width">
         <!-- 미션이벤트 -->
         <div class="event inner">
 
@@ -539,6 +545,258 @@
         </div> -->
     </section>
 
+    <!-- mobile mission_event -->
+    <section class="mobile_width mobile_padding">
+        <div class="mission_event  mobile_level">
+            <div class="event_title">
+                <div class="name_avatar">
+                    <img src="./img/earth.png">
+                </div>
+                <div class="name">
+                    <span>고미선</span> 님은
+                    <br>지구에 머물고 있습니다.
+                </div>
+                <div class="wiz-money">
+                    <p>Wiz 머니</p>
+                    <div class="money">
+                        <p>5,498P</p>
+                        <div class="arrow_btn">
+                            <img src="./img/arrow_w.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="event_step">
+                <p class="step_text">지구</p>
+                <div class="progress_bar">
+                    <div class="step_bar">
+                        <div class="step_filled">
+                            <div class="step_bar_img">
+                                <img src="./img/progress_Bar.png" alt="progress_bar">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <p class="step_text">태양</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- mobile 10초설문/설문더하기 -->
+    <section class="mobile_width">
+        <div class="mobile_tab">
+            <div class="tab_header">
+                <ul class="tab-container">
+                    <li class="tab-container__item active" data-tab="tab1">
+                        <a class="tab-container__item--title" href="#">
+                            <img src="./img/mo_check.png" alt="title_icon">10초 설문</a>
+                    </li>
+                    <li class="tab-container__item" data-tab="tab2">
+                        <a class="tab-container__item--title" href="#">설문 더하기+</a>
+                    </li>
+                </ul>
+                <div class="tab_more">
+                    <a href="javascript:void(0)" class="descript_more">
+                        <p>더보기</p>
+                        <img src="./img/more_btn.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="content-container">
+                <div id="tab1" class="content-container__content target">
+                    <div class="survey_contents">
+                        <div class="survey_contents_item">
+                            <div class="contents_img">
+                                <img src="./img/img1.png">
+                            </div>
+                            <div class="survey_point">
+                                <span>W</span>
+                                <P>2P</P>
+                            </div>
+                            <div class="tab_container">
+                                <div class="survey_content_title">여러분은 가정 내 집안일을 몇 % 정도 담당하시나요?</div>
+                                <div class="survey_join">
+                                    <span class="chat_icon"><img src="./img/chat.png"></span>
+                                    <p>현재 <span class="join_number">2,562</span>명 참여 중</p>
+                                </div>
+                                <div class="join_btn_wrap">
+                                    <button type="button" class="btn submit-btn">참여하기</button>
+                                    <button type="button" class="btn result-btn view_more">결과보기</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="survey_contents_item">
+                            <div class="contents_img">
+                                <img src="./img/img2.png">
+                            </div>
+                            <div class="survey_point">
+                                <span>W</span>
+                                <P>2P</P>
+                            </div>
+                            <div class="tab_container">
+                                <div class="survey_content_title">여러분은 가정 내 집안일을 몇 % 정도 담당하시나요?</div>
+                                <div class="survey_join">
+                                    <span class="chat_icon"><img src="./img/chat.png"></span>
+                                    <p>현재 <span class="join_number">2,562</span>명 참여 중</p>
+                                </div>
+                                <div class="join_btn_wrap">
+                                    <button type="button" class="btn submit-btn">참여하기</button>
+                                    <button type="button" class="btn result-btn view_more">결과보기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab2" class="content-container__content">
+                    <div class="survey_plus ">
+                        <div class="survey_list">
+                            <div class="survey_left">
+                                <div class="list_badg">
+                                    <span>W</span>
+                                    <p>1500P</p>
+                                </div>
+                                <div class="list_title">
+                                    <p>소비자 의견 조사<span>(SM-CM-4c3)</span></p>
+    
+                                </div>
+                                <div class="list_info">
+                                    <ul class="info_descript">
+                                        <li>조사기간 : 2023.04.20 ~ 05.31</li>
+                                        <li>소요시간 : 약 5분 소요</li>
+                                    </ul>
+                                    <div class="plus_btn">
+                                        <button class="btn submit-btn">참여하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="survey_right">
+                                <div class="right_btn">
+                                    <img src="./img/m_arrowbtn.png">
+                                </div>
+                            </div>
+        
+                        </div>
+                        <div class="survey_list">
+                            <div class="survey_left">
+                                <div class="list_badg">
+                                    <span>W</span>
+                                    <p>1500P</p>
+                                </div>
+                                <div class="list_title">
+                                    <p>소비자 의견 조사<span>(SM-CM-4c3)</span></p>
+    
+                                </div>
+                                <div class="list_info">
+                                    <ul class="info_descript">
+                                        <li>조사기간 : 2023.04.20 ~ 05.31</li>
+                                        <li>소요시간 : 약 5분 소요</li>
+                                    </ul>
+                                    <div class="plus_btn">
+                                        <button class="btn submit-btn">참여하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="survey_right">
+                                <div class="right_btn">
+                                    <img src="./img/m_arrowbtn.png">
+                                </div>
+                            </div>
+        
+                        </div>
+                        <div class="survey_list">
+                            <div class="survey_left">
+                                <div class="list_badg">
+                                    <span>W</span>
+                                    <p>1500P</p>
+                                </div>
+                                <div class="list_title">
+                                    <p>소비자 의견 조사<span>(SM-CM-4c3)</span></p>
+    
+                                </div>
+                                <div class="list_info">
+                                    <ul class="info_descript">
+                                        <li>조사기간 : 2023.04.20 ~ 05.31</li>
+                                        <li>소요시간 : 약 5분 소요</li>
+                                    </ul>
+                                    <div class="plus_btn">
+                                        <button class="btn submit-btn">참여하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="survey_right">
+                                <div class="right_btn">
+                                    <img src="./img/m_arrowbtn.png">
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- mobile Wiz Event -->
+    <section class="common_section mobile">
+        <div class="trend_issue inner wiz">
+            <div class="survey_title">
+                <div class="title">
+                    Wiz Event
+                </div>
+                <div class="survey_sub">
+                    <div class="sub_descript">더 많은 이벤트를 확인해보세요. </div>
+                    <a href="javascript:void(0)" class="descript_more">
+                        <p>더보기</p>
+                        <img src="./img/more_btn.png">
+                    </a>
+                </div>
+            </div>
+            <ul class="trend_img_list">
+                <li class="trend_img">
+                    <div class="event_icon">
+                        <img src="./img/i_event1.png">
+                    </div>
+                    <div class="wizevent_title">
+                        Welcome Survey
+                    </div>
+                    <div class="wizevent_discript">
+                        15차 웰컴 서베이
+                        <br>단계별 포인트 지급
+                    </div>
+                </li>
+                <li class="trend_img">
+                    <div class="event_icon">
+                        <img src="./img/i_event2.png">
+                    </div>
+                    <div class="wizevent_title">
+                        출석체크
+                    </div>
+                    <div class="wizevent_discript">
+                        출석체크하며
+                        <Br>매일 5P 즉시 지급
+                    </div>
+                </li>
+                <li class="trend_img">
+                    <div class="event_icon">
+                        <img src="./img/i_event3.png">
+                    </div>
+                    <div class="wizevent_title">
+                        룰렛이벤트
+                    </div>
+                    <div class="wizevent_discript">
+                        행운의 보너스 룰렛
+                        <br>최대 500P 적립
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
 
     <!-- 트렌드이슈 -->
     <section class="common_section">
@@ -565,7 +823,7 @@
                 <li class="trend_img">
                     <img src="./img/img6.png" alt="trend">
                 </li>
-                <li class="trend_img">
+                <li class="trend_img mobile">
                     <img src="./img/img7.png" alt="trend">
                 </li>
             </ul>
@@ -730,6 +988,18 @@
         autoplay: true,
         autoplaySpeed: 3000,
         arrows:false,
+        dots:false,
+        dotsClass:'mobile-dots',
+        responsive: [
+        {
+            breakpoint: 470,
+            settings: {
+                dots: true,
+                dotsClass: 'mobile-dots',
+                infinite: true,
+            }
+        }
+    ]
     }); 
 </script>
 </html>
