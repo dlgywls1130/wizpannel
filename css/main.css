@@ -113,29 +113,37 @@ button {
 }
 
 .main-menu .nav_item:nth-child(1) .item__name:hover,
-.main-menu .nav_item:nth-child(1).active .item__name {
+.main-menu .nav_item:nth-child(1).active .item__name,
+.main-menu .nav_item:hover .item__contents ul>li:nth-child(1) ul li a:hover {
     color: #21a6ed;
 }
 
 .main-menu .nav_item:nth-child(2) .item__name:hover,
-.main-menu .nav_item:nth-child(2).active .item__name {
+.main-menu .nav_item:nth-child(2).active .item__name,
+.main-menu .nav_item:hover .item__contents ul>li:nth-child(2) ul li a:hover  {
     color: orangered;
 }
 
 .main-menu .nav_item:nth-child(3) .item__name:hover,
-.main-menu .nav_item:nth-child(3).active .item__name {
+.main-menu .nav_item:nth-child(3).active .item__name,
+.main-menu .nav_item:hover .item__contents ul>li:nth-child(3) ul li a:hover {
     color: #756fad;
 }
 
 .main-menu .nav_item:nth-child(4) .item__name:hover,
-.main-menu .nav_item:nth-child(4).active .item__name {
+.main-menu .nav_item:nth-child(4).active .item__name,
+.main-menu .nav_item:hover .item__contents ul>li:nth-child(4) ul li a:hover  {
     color: #12cebd;
 }
 
 .main-menu .nav_item:nth-child(5) .item__name:hover,
-.main-menu .nav_item:nth-child(5).active .item__name {
+.main-menu .nav_item:nth-child(5).active .item__name,
+.main-menu .nav_item:hover .item__contents ul>li:nth-child(5) ul li a:hover {
     color: #4c6187;
 }
+
+
+
 
 .main-menu .nav_item:hover .item__contents,
 .main-menu .nav_item .item__contents:hover {
@@ -155,25 +163,8 @@ button {
     font-weight: bold;
 }
 
-.main-menu .nav_item .item__contents ul>li:nth-child(1) ul li a:hover {
-    color: #21a6ed;
-}
 
-.main-menu .nav_item .item__contents ul>li:nth-child(2) ul li a:hover {
-    color: orangered;
-}
 
-.main-menu .nav_item .item__contents ul>li:nth-child(3) ul li a:hover {
-    color: #756fad;
-}
-
-.main-menu .nav_item .item__contents ul>li:nth-child(4) ul li a:hover {
-    color: #12cebd;
-}
-
-.main-menu .nav_item .item__contents ul>li:nth-child(5) ul li a:hover {
-    color: #4c6187;
-}
 
 
 
@@ -1447,6 +1438,38 @@ border-radius: 26px;
     height: 100%;
 }
 
+/* 모바일 메뉴 */
+.mobile_navbar{
+    display: none;
+}
+
+.m_navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 57px;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.m_navbar .mnavbar_item img{
+    width: 18px;
+    height: 18px;
+}
+
+.m_navbar .mnavbar_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.m_navbar .mnavbar_item p{
+    font-weight: 500;
+font-size: 10px;
+color: #484C52;
+}
+
 /* 반응형 */
 
 
@@ -1497,6 +1520,16 @@ border-radius: 26px;
         height: 1050px;
     }
 
+    .footer_info{
+        margin-left: 50px;
+    }
+
+    .footer_inner{
+        flex-wrap: wrap;
+    }
+    .footer_info .info-list{
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -1594,6 +1627,22 @@ border-radius: 26px;
 
     .survey_contents .join_btn_wrap{
         column-gap: 1rem;
+    }
+
+
+    .footer_info{
+        margin-left: 0;
+    }
+
+    .footer_inner{
+        flex-wrap: wrap;
+    }
+    .footer_info .info-list{
+        flex-wrap: wrap;
+    }
+
+    .footer_company ul{
+        flex-wrap: wrap;
     }
 }
 
@@ -1706,5 +1755,8 @@ font-size: 10px;
 
     .wiz .trend_img_list{
         flex-wrap: nowrap;
+    }
+    .mobile_navbar{
+        display: block;
     }
 }
