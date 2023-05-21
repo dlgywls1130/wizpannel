@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="side.css">
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="side">
+        <div class="my_page">
+            <div class="my_head">
+                <div class="name_ranking">
+                    <span class="bold">고미선</span>님
+                    <span class="br">전체<span class="bold">상위 35%</span></span>
+                </div>
+                <div class="upload_date">
+                    <p>2023-04-01 기준</p>
+                    <p>등급 업데이트 <span>D-16</span></p>
+                </div>
+            </div>
+            <div class="my_body">
+                <div class="planet_avatar">
+                    <div class="planet_img">
+                        <img src="./img/side_earth.png">
+                    </div>
+                    <div class="planet_name">
+                        <span>지구</span>에 머무는 중
+                    </div>
+                </div>
+
+                <div class="side_progress">
+
+                    <div class="progress_bar">
+                        <p class="step_text">지구</p>
+                        <div class="step_bar">
+
+                            <div class="step_filled">
+                                <div class="step_bar_img">
+                                    <img src="./img/progress_Bar.png" alt="progress_bar">
+                                </div>
+                                <span class="margin-b">▲</span>
+                                <p>지구 내<span>상위 30%</span></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="progress_end">
+                        <div class="progress_next">
+                            <p>Next</p>
+                            <img src="./img/side_next.png">
+                        </div>
+                        <p class="step_text">태양</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="my_btn">
+                <button type="button" class="side_btn wiz_btn">
+                    <p>Wiz 머니</p>
+                    <div class="money_arrow">
+                        5,798P
+                        <img src="./img/side_arrow_p.png">
+                    </div>
+                </button>
+                <button type="button" class="side_btn wiz_record">
+                    <p>Wiz 머니 적립이력</p>
+                    <div class="money_arrow">
+                        <img src="./img/side_arrow_w.png">
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div class="history_tab side_inner">
+            <ul class="tabs">
+                <li class="tab-link current" data-tab="tab-1">나의 3개월 히스토리</li>
+                <li class="tab-link" data-tab="tab-2">이달의 현황</li>
+            </ul>
+
+            <div id="tab-1" class="tab-content current">
+                <div class="tab_date">
+                    <p>2023.01.01.~03.31.</p>
+                    <img src="./img/side_time.png">
+                </div>
+                <ul class="history_list">
+                    <li class="histoyr_item attendanc">
+                        <div class="item_sub">
+                            <div class="item_img">
+                                <img src="./img/side_history.png">
+                            </div>
+                            <p>출석체크</p>
+                        </div>
+                        <p class="day"><span>25</span>일</p>
+                    </li>
+                    <li class="histoyr_item answer">
+                        <div class="item_sub">
+                            <div class="item_img">
+                                <img src="./img/side_clock.png">
+                            </div>
+                            <p>10초 설문</p>
+                        </div>
+                        <p class="day"><span>52</span>건</p>
+                    </li>
+                    <li class="histoyr_item plus">
+                        <div class="item_sub">
+                            <div class="item_img">
+                                <img src="./img/side_calendar.png">
+                            </div>
+                            <p>설문 더하기</p>
+                        </div>
+                        <p class="day"><span>100</span>건</p>
+                    </li>
+                </ul>
+            </div>
+            <div id="tab-2" class="tab-content">
+                <div class="tab_date">
+                    <p class="today">Today</p>
+                    <p>2023.04.17.</p>
+                    <img src="./img/reload.png">
+                </div>
+                <ul class="history_list">
+                    <li class="histoyr_item attendanc">
+                        <div class="item_sub">
+                            <div class="item_img">
+                                <img src="./img/side_history.png">
+                            </div>
+                            <p>출석체크</p>
+                        </div>
+                        <p class="day"><span>25</span>일</p>
+                    </li>
+                    <li class="histoyr_item answer">
+                        <div class="item_sub">
+                            <div class="item_img">
+                                <img src="./img/side_clock.png">
+                            </div>
+                            <p>10초 설문</p>
+                        </div>
+                        <p class="day"><span>52</span>건</p>
+                    </li>
+                    <li class="histoyr_item plus">
+                        <div class="item_sub">
+                            <div class="item_img">
+                                <img src="./img/side_calendar.png">
+                            </div>
+                            <p>설문 더하기</p>
+                        </div>
+                        <p class="day"><span>100</span>건</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step_benefit">
+            <div class="content_title">
+                등급별 혜택
+            </div>
+            <div class="benefit">
+                <div class="benefit_list">
+                    <div class="benefit_planet">
+                        <img src="./img/benefit_img1.png">
+                    </div>
+                    <p>별똥별</p>
+                </div>
+                <span><img src="./img/benefit_arrow.png"></span>
+                <div class="benefit_list">
+                    <div class="benefit_planet">
+                        <img src="./img/benefit_img2.png">
+                    </div>
+                    <p>달</p>
+                </div>
+                <span><img src="./img/benefit_arrow.png"></span>
+                <div class="benefit_list">
+                    <div class="benefit_planet">
+                        <img src="./img/benefit_img3.png">
+                    </div>
+                    <p>지구</p>
+                </div>
+                <span><img src="./img/benefit_arrow.png"></span>
+                <div class="benefit_list">
+                    <div class="benefit_planet">
+                        <img src="./img/benefit_img4.png">
+                    </div>
+                    <p>태양</p>
+                </div>
+                <span><img src="./img/benefit_arrow.png"></span>
+                <div class="benefit_list">
+                    <div class="benefit_planet line_active">
+                        <img src="./img/benefit_img5.png">
+                    </div>
+                    <p>우주</p>
+                </div>
+            </div>
+
+            <div class="benefit_descript">
+                <p><span class="p_bold">우주</span>에서만 주어지는 <span class="p_color">베네핏</span></p>
+                <p>이전 한달 간 완료했던 설문의 Wiz 머니 10% 추가 지급(매월 5일)</p>
+            </div>
+
+            <div class="notice_alert">
+                <div class="notice_left">
+                    <img src="./img/notice.png">
+                    <p>유의사항 확인하기</p>
+                </div>
+                <div class="btn_arrow">
+                    <img src="./img/notice_arrow.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="logout_btn">
+            <button class="sidelogout">로그아웃</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    $(document).ready(function(){
+	
+	$('ul.tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	})
+
+})
+</script>
+</html>

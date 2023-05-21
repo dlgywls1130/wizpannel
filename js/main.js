@@ -1,3 +1,28 @@
+
+
+
+// mobile tab
+const tabItem = document.querySelectorAll(".tab-container__item");
+const tabContent = document.querySelectorAll(".content-container__content");
+
+tabItem.forEach((item) => {
+  item.addEventListener("click", tabHandler);
+});
+
+function tabHandler(item) {
+  const tabTarget = item.currentTarget;
+  const target = tabTarget.dataset.tab;
+  tabItem.forEach((title) => {
+    title.classList.remove("active");
+  });
+  tabContent.forEach((target) => {
+    target.classList.remove("target");
+  });
+  document.querySelector("#" + target).classList.add("target");
+  tabTarget.classList.add("active");
+}
+
+
 //main alert
 
 // Modal을 가져옵니다.
@@ -29,14 +54,14 @@ function Modal(num) {
 } 
 
 // 원하는 Modal 수만큼 Modal 함수를 호출해서 funcs 함수에 정의합니다.
-// for(var i = 0; i < btns.length; i++) {
-//   funcs[i] = Modal(i);
-// }
+for(var i = 0; i < btns.length; i++) {
+  funcs[i] = Modal(i);
+}
  
 // 원하는 Modal 수만큼 funcs 함수를 호출합니다.
-// for(var j = 0; j < btns.length; j++) {
-//   funcs[j]();
-// }
+for(var j = 0; j < btns.length; j++) {
+  funcs[j]();
+}
  
  
 // Modal 영역 밖을 클릭하면 Modal을 닫습니다.
@@ -46,26 +71,3 @@ window.onclick = function(event) {
   }
 };
 
-
-
-
-// mobile tab
-const tabItem = document.querySelectorAll(".tab-container__item");
-const tabContent = document.querySelectorAll(".content-container__content");
-
-tabItem.forEach((item) => {
-  item.addEventListener("click", tabHandler);
-});
-
-function tabHandler(item) {
-  const tabTarget = item.currentTarget;
-  const target = tabTarget.dataset.tab;
-  tabItem.forEach((title) => {
-    title.classList.remove("active");
-  });
-  tabContent.forEach((target) => {
-    target.classList.remove("target");
-  });
-  document.querySelector("#" + target).classList.add("target");
-  tabTarget.classList.add("active");
-}

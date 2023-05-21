@@ -14,6 +14,7 @@
 </head>
 <body>
 
+
     <!-- header -->
     <header>
         <div class="nav_wrapp">
@@ -269,8 +270,8 @@
 
                     <ul class="header_sign_wrap">
                         <li class="pc_sign">
-                            <a href="">
-                                <div class="sign_icon">
+                            <a href="javascript:void(0)" id="navbar_open">
+                                <div class="sign_icon" >
                                     <img src="./img/icon_login.png" alt="login"> <!-- 로그인하기전 -->
                                     <!-- 로그인후 -->
                                     <!-- <img src="./img/icon_logout.png" alt="logout">  -->
@@ -302,6 +303,144 @@
         </div>
     </header>
 
+    
+    <!-- login화면 -->
+    
+<div class="login_wrap" id="sidebar">
+
+	<ul class="login_navbar">
+    <li class="tab-link close" id="login_close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+</svg>
+  
+    </li>
+		<li class="tab-link current" data-tab="tab-01">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+</svg>
+  
+</li>
+		<li class="tab-link" data-tab="tab-02">
+		  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+  <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+</svg>
+		</li>
+		<li class="tab-link" data-tab="tab-03">
+		  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+</svg>
+		</li>
+	</ul>
+
+  <div class="tab-contain_wrap">
+	<div id="tab-01" class="tab-content current">
+    <div class="login_input">
+	  <input type="text" class="input_login" placeholder="아이디">
+    	  <input type="password" class="input_login" placeholder="비밀번호">
+	</div>
+    <div class="login_btn">
+      <button type="button">Login</button>
+    </div>
+    <div class="naver_login">
+      <a href="" class="sns_login">
+        <img src="./img/naver.png">
+        <p>네이버 로그인</p>
+      </a>
+    </div>
+    <div class="member">
+      <div class="member_wrap">
+        <div class="member_title">
+          <p>MEMBER</p>
+            
+          </div>
+        <div class="member_list">
+          <a href="" class="member_item">
+          <p>회원가입</p>
+          <img src="">
+        </a>
+          <a href="" class="member_item">
+          <p>아이디/비밀번호 찾기</p>
+          <img src="">
+        </a>
+        </div>
+       </div>
+      <div class="member_wrap">
+      <div class="member_title">
+        <p>SERVICE</p></div>
+        <div class="member_list">
+        <a href="" class="member_item">
+          <p>FAQ</p>
+          <img src="">
+        </a>
+        <a href="" class="member_item">
+          <p>1:1문의</p>
+          <img src="">
+        </a>
+        
+      </div>
+      </div>
+    </div>
+    </div>
+    
+	<div id="tab-02" class="tab-content">
+    <ul class="alarm_list">
+      <li><a href="">로그인</a></li>
+      <li><a href="">회원가입</a></li>
+      <li><a href="">정보찾기</a></li>
+    </ul>
+    <div class="member_wrap">
+      <div class="member">
+        <div class="member_title">
+          <p>RESPONSE</p>
+            
+          </div>
+        
+       </div>
+    </div>
+	</div>
+	<div id="tab-03" class="tab-content">
+        <ul class="alarm_list">
+            <li><a href="">로그인</a></li>
+            <li><a href="">회원가입</a></li>
+            <li><a href="">정보찾기</a></li>
+          </ul>
+          <div class="member_wrap">
+            <div class="member">
+              <div class="member_title">
+                <p>SEARCH</p>
+                  
+                </div>
+                <div class="search_navbar">
+                    <div class="option_selet">
+                        <select>
+                            <option value="1">게시물</option>
+                            <option value="2">태그</option>
+                        </select>
+                        <select>
+                            <option value="1">또는</option>
+                            <option value="2">그리고</option>
+                        </select>
+                    </div>
+                    <div class="search_input">
+                        <input type="text" placeholder="검색어는 두글자 이상">
+                        <div class="search_btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </div>
+    
+                    </div>
+                </div>
+              
+             </div>
+          </div>
+    </div>
+  </div>
+
+</div>
+
+    <main>
     <!-- main banner -->
     <section class="">
         <div class="main_banner">
@@ -591,7 +730,10 @@
                 <ul class="tab-container">
                     <li class="tab-container__item active" data-tab="tab1">
                         <a class="tab-container__item--title" href="#">
-                            <img src="./img/mo_check.png" alt="title_icon">10초 설문</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                              </svg>
+                              10초 설문</a>
                     </li>
                     <li class="tab-container__item" data-tab="tab2">
                         <a class="tab-container__item--title" href="#">설문 더하기+</a>
@@ -832,7 +974,7 @@
     </section>
 
     <!-- notice & contact -->
-    <section id="main_bottom" class="common_section">
+    <section id="main_bottom" class="common_section pc-width">
         <div class="main_bottom inner">
 
             <!-- notice -->
@@ -912,6 +1054,7 @@
         </div>
     </section>
 
+</main>
 
     <!-- footer -->
     <footer>
@@ -1036,5 +1179,34 @@
         }
     ]
     }); 
+
+    // 로그인 버튼
+    $(document).ready(function(){
+  $('#navbar_open').click(function(){
+    $('#sidebar').animate({'right':'0'}, 400);
+    $('.tab-link[data-tab="tab-01"]').addClass('current');
+    $('#tab-01').addClass('current');
+  });
+
+  $('#login_close').click(function(){
+    $('#sidebar').animate({'right':'-340px'}, 400);
+    $('.tab-link.current').removeClass('current');
+    $('.tab-content.current').removeClass('current');
+  });
+
+  $('ul.login_navbar li').click(function(){
+    var tab_id = $(this).attr('data-tab');
+
+    $('ul.login_navbar li').removeClass('current');
+    $('.tab-content').removeClass('current');
+
+    $(this).addClass('current');
+    $("#" + tab_id).addClass('current');
+  });
+});
+
+
+
+
 </script>
 </html>
