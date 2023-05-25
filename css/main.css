@@ -42,7 +42,7 @@ button {
 }
 
 .inner {
-    max-width: 1108px;
+    max-width: 1120px;
     margin: 0 auto;
 }
 
@@ -66,7 +66,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1108px;
+    max-width: 1120px;
     width: 100%;
     margin: 0 auto;
 }
@@ -91,7 +91,7 @@ button {
 }
 
 .main-menu {
-    z-index: 1;
+    z-index: 5000;
     display: flex;
 }
 
@@ -327,6 +327,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     gap: 2.1rem;
+    justify-content: space-between;
 }
 
 .survey_wrap .survey_contents .survey_contents_item {
@@ -575,6 +576,7 @@ button {
     align-items: center;
     flex-wrap: wrap;
     column-gap: 2rem;
+    justify-content: space-between;
 }
 
 .survey_plus .survey_list {

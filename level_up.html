@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/page.css">
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="level_wrap">
+        <div class="level_detail_img">
+            <img src="./img/rating_up.png">
+        </div>
+
+        <div class="my_level">
+            <div class="my_level_item">
+                <div class="level_head">
+                    <div class="level_title">
+                        나의
+                        <br>현재 등급
+                    </div>
+                    <div class="level_img">
+                        <img src="./img/side_earth.png">
+                    </div>
+                </div>
+                <div class="level_span">
+                    고미선님은 현재 지구에 머물러 있습니다.
+                </div>
+                
+            </div>
+            <div class="my_level_item">
+                <div class="level_head">
+                    <div class="level_title">
+                        나의
+                        <br>Max 등급
+                    </div>
+                    <div class="level_img">
+                        <img src="./img/rating_up_max.png">
+                    </div>
+                </div>
+                <div class="level_span">
+                    고미선님은 태양까지 머문 적이 있습니다.
+                </div>
+            </div>
+        </div>
+
+        <div class="level_step">
+            <div class="level_title">
+                나의 최초 등급 UP 현황
+            </div>
+            <ul class="step">
+
+            <!-- 진행형일시 level_end 클래스 추가하면 변경됨 -->
+                <li class="step_item level_end" data-variable="200">
+                    <div class="step_item_head">
+                        <div class="step_img">
+                            <img src="./img/rating_prev1.png">
+                        </div>
+                        <p>달</p>
+                        <img class="end_img" src="./img/level_step2.png">
+                    </div>
+                    <div class="level_name"></div>
+                </li>
+                <li><img src="./img/rating_arrow.png"></li>
+                
+                <!-- 진행형일시 now_level 클래스 추가하면 변경됨 -->
+                <li class="step_item now_level" data-variable="400"> 
+                    
+                    <div class="step_item_head ">
+                        <div class="step_img">
+                            <img src="./img/rating_prev2.png">
+                        </div>
+                        <p>지구</p>
+                        <img class="end_img" src="./img/level_step2.png">
+                    </div>
+                    <div class="level_name"></div>
+                </li>
+                <li><img src="./img/rating_arrow_b.png"></li>
+
+                <li class="step_item" data-variable="600">
+                    <div class="step_item_head">
+                        <div class="step_img">
+                            <img src="./img/rating_prev3.png">
+                        </div>
+                        <p>태양</p>
+                        <img class="end_img" src="./img/level_step2.png">
+                    </div>
+                    <div class="level_name"></div>
+                </li>
+                <li><img src="./img/rating_arrow_b.png"></li>
+
+                <li class="step_item" data-variable="800">
+                    <div class="step_item_head">
+                        <div class="step_img">
+                            <img src="./img/rating_prev4.png">
+                        </div>
+                        <p>우주</p>
+                        <img class="end_img" src="./img/level_step2.png">
+                    </div>
+                    <div class="level_name"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+
+<script>
+
+var selector = '.my_level_item';
+
+$(selector).on('click', function(){
+    $(selector).removeClass('active');
+    $(this).addClass('active');
+});
+
+  // DOM 요소들을 선택합니다.
+  const stepItems = document.querySelectorAll('.step_item');
+
+  // 각 step_item 요소에 대해 처리합니다.
+  stepItems.forEach((item) => {
+    // data-variable 속성 값을 가져옵니다.
+    const variable = item.getAttribute('data-variable');
+
+    // level_name 요소를 선택합니다.
+    const levelName = item.querySelector('.level_name');
+
+    // end_img 요소를 선택합니다.
+    const endImg = item.querySelector('.end_img');
+
+    // level_name의 내용과 end_img의 display를 동적으로 변경합니다.
+    if (variable) {
+      if (item.classList.contains('level_end')) {
+        levelName.textContent = variable + 'p 지급완료!';
+        endImg.style.display = 'block';
+      } else {
+        levelName.textContent = '등급UP! ' + variable + 'p';
+        endImg.style.display = 'none';
+      }
+    }
+  });
+</script>
+</html>
